@@ -26,24 +26,24 @@ float PID::Update(float setpoint, float measurement)
 		integrator = limMinInt;
 	}
 
-   differentiator = -(2.0f * Kd * (measurement - prevMeasurement)
+    differentiator = -(2.0f * Kd * (measurement - prevMeasurement)
            + (2.0f * tau - T) * differentiator)
            / (2.0f * tau + T);
 
-   out = proportional + integrator + differentiator;
+    out = proportional + integrator + differentiator;
 
-   if(out > limMax) 
-   {
-	   out = limMax;
-   }
-   else if(out < limMin) 
-   {
-	   out = limMin;
-   }
+    if(out > limMax) 
+    {
+	    out = limMax;
+    }
+    else if(out < limMin) 
+    {
+	    out = limMin;
+    }
 
-  prevError = error;
+   prevError = error;
 
-  prevError = measurement;
+   prevError = measurement;
 
-  return out;
+   return out;
 }
