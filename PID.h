@@ -15,13 +15,12 @@ class PID
 	float Kd;
 	float limMin;
 	float limMax;
-
-	
-	private:
+	float T;
 	float tau;
+
+	private:
 	float limMinInt = -255;
 	float limMaxInt = 255;
-	float T;
 	float integrator;
 	float prevError;
 	float differentiator;
