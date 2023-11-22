@@ -31,7 +31,7 @@ This repository contains a simple implementation of a Proportional-Integral-Deri
 * Call the Update method in your control loop to compute the control output.
 * float setpoint =  desired_value;
 * float measurement = current_value;
-* float output = myPID.Update(setpoint, measurement);
+* float output = Pid.Update(setpoint, measurement);
 
 **Additional Notes:**
 * The implementation includes anti-windup logic to prevent integrator windup.
