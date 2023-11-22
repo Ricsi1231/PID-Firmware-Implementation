@@ -1,18 +1,18 @@
 # PID-Firmware-Implementation
 
-# Overview
+Overview
 This repository contains a simple implementation of a Proportional-Integral-Derivative (PID) controller in C++ for an STM32F4 microcontroller.
 
-# Files
+Files
 PID.h: Header file containing the PID class definition and declarations.
 PID.cpp: C++ file implementing the PID class methods.
 
-# Features
+Features
 Proportional, Integral, and Derivative terms for precise control.
 Anti-windup logic to prevent integrator windup.
 Implementation suitable for STM32F4 microcontroller.
 
-#Usage
+Usage
 Include the Files:
 Add the PID.h and PID.cpp files to your STM32F4 project.
 Instantiate PID Controller:
