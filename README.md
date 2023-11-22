@@ -19,9 +19,11 @@ Instantiate PID Controller:
 Create an instance of the PID class in your code.
 
 #include "PID.h"
+
 PID Pid;
 
 Configure PID Parameters:
+
 Pid.Kp = 0.1;
 Pid.Ki = 0.1;
 Pid.Kd = 0.1;
