@@ -18,20 +18,27 @@ This repository contains a simple implementation of a Proportional-Integral-Deri
 * Instantiate PID Controller:
 * Create an instance of the PID class in your code.
 
-* #include "PID.h"
-* PID Pid;
+```C
+#include "PID.h"
+PID Pid;
+```
 
 **Configure PID Parameters:**
 
-* Pid.Kp = 0.1;
-* Pid.Ki = 0.1;
-* Pid.Kd = 0.1;
+```C
+Pid.Kp = 0.1;
+Pid.Ki = 0.1;
+Pid.Kd = 0.1;
+```
 
 **Update PID:**
 * Call the Update method in your control loop to compute the control output.
-* float setpoint =  desired_value;
-* float measurement = current_value;
-* float output = Pid.Update(setpoint, measurement);
+
+```C
+float setpoint =  desired_value;
+float measurement = current_value;
+float output = Pid.Update(setpoint, measurement);
+```
 
 **Additional Notes:**
 * The implementation includes anti-windup logic to prevent integrator windup.
